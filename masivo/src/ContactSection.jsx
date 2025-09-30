@@ -14,11 +14,12 @@ const ContactSection = ({ lang }) => {
 
   return (
     <section
-      id="contact"
-      className="px-4 py-12 bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500"
+      className="px-4 py-16 bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500"
     >
       {/* Title */}
-      <h2 className="text-4xl font-serif font-bold mb-6 text-center">
+      <h2 
+      id="contact"
+       className="text-4xl font-serif font-bold mb-6 text-center">
         {lang === "mk" ? "Контакт" : "Contact"}
       </h2>
 

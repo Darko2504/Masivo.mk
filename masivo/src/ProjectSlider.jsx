@@ -76,14 +76,15 @@ const ProjectSlider = ({ lang }) => {
 
   return (
     <section
-      id="projects"
       className="relative w-full overflow-hidden rounded-lg mt-8"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
       {/* Title */}
-      <h2 className="text-4xl font-serif font-bold mb-6 text-center">
+      <h2 
+      id="projects"
+       className="text-4xl font-serif font-bold mb-6 mt-16 text-center">
         {lang === 'mk' ? 'Проекти' : 'Projects'}
       </h2>
 

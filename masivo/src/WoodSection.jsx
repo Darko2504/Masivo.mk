@@ -49,11 +49,11 @@ const WoodSection = ({ lang }) => {
   return (
     <section
       id="дрво"
-      className="px-4 py-20 md:py-32 bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500"
+      className="px-4 py-20 md:py-40 bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500"
     >
       {/* Top overview cards */}
       <motion.div
-        className="text-center mb-12"
+        className="text-center mb-16"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -87,42 +87,37 @@ const WoodSection = ({ lang }) => {
       </motion.div>
 
       {/* Detailed sections */}
-      <div className="space-y-16">
-        {woods.map((wood, i) => (
-          <motion.div
-            key={wood.id}
-            id={`${wood.id}-section`}
-            className="flex flex-col items-center space-y-4 md:space-y-6"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: i * 0.2 }}
-            viewport={{ once: true }}
-          >
-            {/* Text */}
-            <div className="w-full md:w-2/3 text-center">
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-2">
-                {lang === "mk" ? wood.name : wood.enName}
-              </h3>
-              <p className="text-base md:text-lg">
-                {lang === "mk" ? wood.description.mk : wood.description.en}
-              </p>
-            </div>
-
-            {/* Single Image */}
-            <div className="w-full flex justify-center">
-              <motion.img
-                src={wood.image}
-                alt={wood.name}
-                className="w-full sm:w-11/12 md:w-2/3 h-64 md:h-80 object-cover rounded-lg shadow-lg"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              />
-            </div>
-          </motion.div>
-        ))}
+<div className="space-y-16">
+  {woods.map((wood) => (
+    <div
+      key={wood.id}
+      className="flex flex-col items-center space-y-4 md:space-y-6"
+    >
+      {/* Title + Text */}
+      <div className="w-full md:w-2/3 text-center">
+        <h3
+          id={`${wood.id}-section`} // 🔑 Move the id here
+          className="text-2xl md:text-3xl font-serif font-semibold mb-2 scroll-mt-32 md:scroll-mt-40"
+        >
+          {lang === "mk" ? wood.name : wood.enName}
+        </h3>
+        <p className="text-base md:text-lg">
+          {lang === "mk" ? wood.description.mk : wood.description.en}
+        </p>
       </div>
+
+      {/* Single Image */}
+      <div className="w-full flex justify-center">
+        <img
+          src={wood.image}
+          alt={wood.name}
+          className="w-full sm:w-11/12 md:w-2/3 h-64 md:h-80 object-cover rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

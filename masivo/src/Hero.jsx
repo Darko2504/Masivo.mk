@@ -9,7 +9,7 @@ const Hero = ({ lang }) => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center pt-24 md:pt-32 px-4 text-center min-h-[60vh] bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500">
+    <section className="flex flex-col items-center justify-center pt-40 md:pt-35 px-6 text-center min-h-[60vh] bg-lightBg dark:bg-darkBg text-textLight dark:text-textDark transition-colors duration-500">
       
       {/* Animated Logo */}
       <motion.img 
