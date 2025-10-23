@@ -26,8 +26,8 @@ const woods = [
     name: "Даб",
     enName: "Oak",
     description: {
-      mk: "Македонскиот даб (Quercus trojana) е малo до среднo дрво, кое расте до 20 метри височина. Лисjата му се сјајно зелени до сивозелени, со грубо назабени рабови. Познат е по својата цврстина и долготрајност, што го прави идеален за мебел. Дабот е симбол на сила и е присутен во грбот на Република Северна Македонија.",
-      en: "Macedonian oak (Quercus trojana) is a small to medium-sized tree, reaching up to 20 meters in height. Its leaves are glossy green to gray-green, with roughly serrated edges. Oak is famous for its strength and longevity, making it ideal for furniture and wine barrels. Oak is a symbol of strength and is featured in the coat of arms of North Macedonia.",
+      mk: "Македонскиот даб (Quercus trojana) е малo до среднo дрво, кое расте до 20 метри височина. Лисjата му се сјајно зелени до сивозелени, со грубо назабени рабови. Познат е по својата цврстина и долготрајност, што го прави идеален за мебел. Дабот е симбол на сила и е присутен во грбот на Република Македонија.",
+      en: "Macedonian oak (Quercus trojana) is a small to medium-sized tree, reaching up to 20 meters in height. Its leaves are glossy green to gray-green, with roughly serrated edges. Oak is famous for its strength and longevity, making it ideal for furniture and wine barrels. Oak is a symbol of strength and is featured in the coat of arms of Macedonia.",
     },
     image: dabSlider2,
     thumb: DabMain,
