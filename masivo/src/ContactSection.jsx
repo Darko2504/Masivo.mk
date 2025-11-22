@@ -24,7 +24,7 @@ const ContactSection = ({ lang }) => {
       </h2>
 
       {/* Contact Info */}
-      <div className="text-center mb-8 space-y-4">
+      <div className="text-center mb-8 space-y-4"> 
         <div className="flex justify-center items-center gap-2">
           <FontAwesomeIcon icon={faInstagram} className="text-xl text-accent" />
           <a
