@@ -5,7 +5,9 @@ import WoodSection from './WoodSection';
 import ProjectSlider from './ProjectSlider';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
-import project18 from "../src/assets/projects/Project18.png";
+// import project18 from "../src/assets/projects/Project18.png";
+import project19 from "../src/assets/projects/Project19.jpg";
+
 
 function App() {
   const [lang, setLang] = useState('mk');
@@ -56,7 +58,7 @@ function App() {
 
             {/* Image */}
             <img
-              src={project18}
+              src={project19}
               alt="New Project"
               className="mx-auto rounded-lg max-h-96 md:max-h-[500px] object-contain"
             />

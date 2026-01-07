@@ -19,6 +19,7 @@ import project15 from "../src/assets/projects/Project15.PNG";
 import project16 from "../src/assets/projects/Project16.PNG";
 import project17 from "../src/assets/projects/Project17.PNG";
 import project18 from "../src/assets/projects/Project18.png";
+import project19 from "../src/assets/projects/Project19.jpg"
 // Array of images
 const projects = [
   project1,
@@ -38,7 +39,8 @@ const projects = [
   project15,
   project16,
   project17,
-  project18
+  project18,
+  project19
 ];
 
 const ProjectSlider = ({ lang }) => {
